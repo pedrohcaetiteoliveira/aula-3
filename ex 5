@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner e = new Scanner(System.in);
+
+        System.out.println("numero 1");
+        int n1 = e.nextInt();
+
+        if ((n1 >= 50) && (n1 <= 100)) {
+            System.out.println("está no intervalo");
+        } else {
+            System.out.println("não está no intervalo");
+        }
+
+        e.close();
+    }
+}
