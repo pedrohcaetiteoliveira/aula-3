@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner e = new Scanner(System.in);
+        double salario, bonus;
+        int anos;
+
+        System.out.println("Digite o salario do funcionario: ");
+        salario = e.nextDouble();
+
+        System.out.println("digite a quantidade de anos na empresa: ");
+        anos = e.nextInt();
+
+        if (anos >= 5) {
+            bonus = salario * 0.20;
+        } else {
+            bonus = salario * 0.10;
+        }
+
+        System.out.println("O valor do bônus é: " + bonus);
+
+        e.close();
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner e = new Scanner(System.in);
+        double salario, bonus;
+        int anos;
+
+        System.out.println("Digite o salario do funcionario: ");
+        salario = e.nextDouble();
+
+        System.out.println("digite a quantidade de anos na empresa: ");
+        anos = e.nextInt();
+
+        if (anos >= 5) {
+            bonus = salario * 0.20;
+        } else {
+            bonus = salario * 0.10;
+        }
+
+        System.out.printf("O valor do bônus é: R$ %.2f", bonus);
+
+        e.close();
+    }
+}
