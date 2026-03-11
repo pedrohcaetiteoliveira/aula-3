@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner e = new Scanner(System.in);
+
+        // Ler dois valores inteiros
+        System.out.print("Digite o primeiro número: ");
+        int a = e.nextInt();
+
+        System.out.print("Digite o segundo número: ");
+        int b = e.nextInt();
+
+        // Verificar se são iguais
+        if (a == b) {
+            System.out.println("Números iguais");
+        } else {
+            int diferenca = Math.abs(a - b);
+            System.out.println("Diferença: " + diferenca);
+        }
+
+        e.close();
+    }
+}
