@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner e=new Scanner(System.in);
+        System.out.println("numero 1");
+        int n1 = e.nextInt();
+        System.out.println("numero 2");
+        int n2 = e.nextInt();
+    if (n1 > n2) {
+        System.out.println(n1 +" maior que" + n2 );
+    }else {
+        System.out.println(n2+"maior que " +n1);
+        
+    }
+    }
+}
